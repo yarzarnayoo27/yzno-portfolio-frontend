@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import Navbar from "./component/Navbar";
+import Header from "./component/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,11 +74,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-500 ease-in-out`}
       >
         <Providers>
-          <Navbar />
-          {children}</Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
