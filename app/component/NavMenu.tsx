@@ -1,10 +1,13 @@
+import { useTheme } from "next-themes";
 import NavLink from "./NavLink";
 
 const NavMenu = () => {
+const { theme, setTheme } = useTheme();
+
   return (
     <>
-      <nav className="text-black">
-        <ul className="flex gap-2">
+      <nav>
+        <ul className="hidden md:flex gap-2">
           <NavLink />
         </ul>
       </nav>

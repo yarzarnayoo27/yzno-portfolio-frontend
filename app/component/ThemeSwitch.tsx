@@ -17,8 +17,8 @@ export function ThemeSwitch() {
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className="relative flex items-center w-20 h-10 rounded-full 
-bg-sky-300 shadow-[inset_0_0_20px_rgba(255,255,255,0.4)] dark:bg-linear-to-br dark:from-slate-900 dark:to-slate-800
-transition-all duration-500 ease-smooth shadow-inner"
+      bg-sky-300 shadow-[inset_0_0_20px_rgba(255,255,255,0.4)] dark:bg-linear-to-br dark:from-slate-900 dark:to-slate-800
+      transition-all duration-500 ease-smooth shadow-inner"
     >
       {/* Background decorative icons */}
       <div className="absolute inset-0 flex items-center justify-between px-3">

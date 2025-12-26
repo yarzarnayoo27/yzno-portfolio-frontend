@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "https://yarzarnayoo.com",
   },
 
   themeColor: "#0f172a",
