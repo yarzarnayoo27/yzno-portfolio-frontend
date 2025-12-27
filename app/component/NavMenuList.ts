@@ -1,7 +1,7 @@
 export const NavMenuList = [
   {
     name: "Home",
-    urlPath: "/#home",
+    urlPath: "/",
   },
   {
     name: "About",

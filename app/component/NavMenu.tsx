@@ -1,9 +1,7 @@
-import { useTheme } from "next-themes";
+"use client";
 import NavLink from "./NavLink";
-import { useEffect, useState } from "react";
 
 const NavMenu = () => {
-const { theme, setTheme } = useTheme();
 
   return (
     <>

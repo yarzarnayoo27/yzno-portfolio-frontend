@@ -3,16 +3,24 @@
 :root {
   --color-bg: #ffffff;
   --color-text: rgb(100, 116, 139);
+  --primary-gradient: #a855f7;
+  --secondary-gradient: #6366f1;
 }
 
 html.dark {
   --color-bg: #121212;
   --color-text: rgb(100, 116, 139);
+  --primary-gradient: #f59e0b;
+  --secondary-gradient: #facc15;
+}
+
+@layer utilities {
+  .primary-gradient {
+    color: var(--primary-gradient);
+  }
 }
 
 @theme inline {
-  /* --color-background: var(--background); */
-  /* --color-background-light: var(--background); */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,14 +39,29 @@ li {
 }
 
 .gradient-light {
-  background: linear-gradient(90deg, #facc15, #f59e0b);
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hover-light:hover {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-dark {
-  background: linear-gradient(90deg, #6366F1, #A855F7);
+  background: linear-gradient(90deg, #facc15, #f59e0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hover-dark:hover {
+  background: linear-gradient(90deg, #facc15, #f59e0b);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
