@@ -1,17 +1,14 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import Header from "./component/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -61,9 +58,11 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: "https://yarzarnayoo.com",
-  },
+  }
+};
 
-  themeColor: "#0f172a",
+export const viewport: Viewport = {
+  themeColor: "#121212",
 };
 
 export default function RootLayout({
@@ -74,7 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-500 ease-in-out`}
+        className={`${poppins.variable} antialiased transition-colors duration-500 ease-in-out`}
       >
         <Providers>
           <Header />
