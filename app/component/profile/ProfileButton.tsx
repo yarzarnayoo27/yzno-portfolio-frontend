@@ -5,16 +5,16 @@ import { ReactNode, useEffect, useState } from "react";
 
 interface ProfileButtonProps {
   children: ReactNode;
+  href: string;
   variant?: "filled" | "outline";
   icon?: ReactNode;
-  onClick?: () => void;
 }
 
 const ProfileButton: React.FC<ProfileButtonProps> = ({
   children,
+  href,
   variant = "outline",
   icon,
-  onClick,
 }) => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -41,13 +41,15 @@ const ProfileButton: React.FC<ProfileButtonProps> = ({
   }`;
 
   return (
-    <button
-      className={`${baseClasses} ${variant === "outline" ? outline : solid}`}
-      onClick={onClick}
+    <a
+      className={`${baseClasses} ${
+        variant === "outline" ? outline : solid
+      } cursor-pointer`}
+      href={href}
     >
       {icon && icon}
       {children}
-    </button>
+    </a>
   );
 };
 

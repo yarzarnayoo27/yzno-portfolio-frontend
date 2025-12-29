@@ -11,17 +11,18 @@ html.dark {
 }
 
 @layer utilities {
-
 }
 
 @theme inline {
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +51,7 @@ li {
 }
 
 .gradient-dark {
-  background: linear-gradient(90deg, #6366F1, #A855F7);
+  background: linear-gradient(90deg, #6366f1, #a855f7);
   background: linear-gradient(90deg, #facc15, #f59e0b);
   background-clip: text;
   -webkit-background-clip: text;
