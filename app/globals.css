@@ -3,15 +3,11 @@
 :root {
   --color-bg: #ffffff;
   --color-text: rgb(100, 116, 139);
-  --primary-gradient: #a855f7;
-  --secondary-gradient: #6366f1;
 }
 
 html.dark {
   --color-bg: #121212;
   --color-text: rgb(100, 116, 139);
-  --primary-gradient: #f59e0b;
-  --secondary-gradient: #facc15;
 }
 
 @layer utilities {
@@ -53,14 +49,14 @@ li {
 }
 
 .gradient-dark {
-  background: linear-gradient(90deg, #facc15, #f59e0b);
+  background: linear-gradient(90deg, #d97706, #eab308);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hover-dark:hover {
-  background: linear-gradient(90deg, #facc15, #f59e0b);
+  background: linear-gradient(90deg, #d97706, #eab308);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
