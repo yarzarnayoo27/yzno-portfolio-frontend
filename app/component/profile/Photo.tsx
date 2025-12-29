@@ -46,7 +46,7 @@ const Photo: React.FC<PhotoProps> = ({
                   px-10 py-1 rounded-xl shadow-lg
                   max-w-[260px] text-sm font-semibold"
       >
-        <p className="relative pl-5 before:absolute before:left-0 before:top-1.5 before:h-2 before:w-2 before:rounded-full before:bg-[var(--secondary-gradient)]">
+        <p className="relative pl-5 before:absolute before:left-0 before:top-1.5 before:h-2 before:w-2 before:rounded-full before:bg-green-500">
           {experience}
         </p>
 

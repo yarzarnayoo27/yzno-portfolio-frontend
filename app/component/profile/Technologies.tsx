@@ -6,15 +6,23 @@ import {
   SiTypescript,
   SiNodedotjs,
   SiExpress,
+  SiNestjs,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
 } from "react-icons/si";
 
 const techItems = [
-  { icon: SiReact, label: "React", color: "#61DAFB" },
-  { icon: SiNextdotjs, label: "Next.js", color: "#000000" },
   { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
   { icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
+  { icon: SiReact, label: "React", color: "#61DAFB" },
+  { icon: SiNextdotjs, label: "Next.js", color: "#6B7280" },
   { icon: SiNodedotjs, label: "Node.js", color: "#339933" },
-  { icon: SiExpress, label: "Express.js", color: "#000000" },
+  { icon: SiExpress, label: "Express.js", color: "#6B7280" },
+  { icon: SiNestjs, label: "NestJS", color: "#E0234E" },
+  { icon: SiMysql, label: "MySQL", color: "#4479A1" },
+  { icon: SiPostgresql, label: "PostgreSQL", color: "#336791" },
+  { icon: SiMongodb, label: "MongoDB", color: "#47A248" },
 ];
 
 interface TechItemProps {
@@ -25,23 +33,36 @@ interface TechItemProps {
 
 function TechItem({ Icon, label, color }: TechItemProps) {
   return (
-    <div className="flex items-center gap-2 transition-transform hover:-translate-y-0.5">
-      <Icon size={24} color={color} />
-      <span className="text-[var(--color-text)] text-sm font-medium">{label}</span>
+    <div className="flex items-center gap-1.5">
+      <Icon size={16} color={color} />
+      <span className="text-xs font-medium text-[var(--color-text)]">
+        {label}
+      </span>
     </div>
   );
 }
 
 const Technologies = () => {
   return (
-    <div className="flex flex-wrap gap-6 mt-4">
+    <div className="flex flex-wrap gap-4 mt-4">
       {techItems.map((tech) => (
-        <TechItem
+        <div
           key={tech.label}
-          Icon={tech.icon}
-          label={tech.label}
-          color={tech.color}
-        />
+          className={`
+              flex items-center
+              px-2 py-1.5
+              rounded-md
+              border border-slate-400/40
+              text-slate-700
+              bg-slate-400/10
+              transition-all
+              hover:border-slate-400/70
+              hover:-translate-y-0.5
+              hover:shadow-sm hover:shadow-slate-400/30
+            `}
+        >
+          <TechItem Icon={tech.icon} label={tech.label} color={tech.color} />
+        </div>
       ))}
     </div>
   );

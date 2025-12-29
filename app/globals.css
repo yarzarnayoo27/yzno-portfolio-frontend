@@ -11,16 +11,16 @@ html.dark {
 }
 
 @layer utilities {
-  .primary-gradient {
-    color: var(--primary-gradient);
-  }
+
 }
 
 @theme inline {
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    
   }
 }
 
@@ -35,6 +35,7 @@ li {
 }
 
 .gradient-light {
+  background: linear-gradient(90deg, #facc15, #f59e0b);
   background: linear-gradient(90deg, #6366f1, #a855f7);
   background-clip: text;
   -webkit-background-clip: text;
@@ -49,17 +50,16 @@ li {
 }
 
 .gradient-dark {
-  background: linear-gradient(90deg, #d97706, #eab308);
+  background: linear-gradient(90deg, #6366F1, #A855F7);
+  background: linear-gradient(90deg, #facc15, #f59e0b);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hover-dark:hover {
-  background: linear-gradient(90deg, #d97706, #eab308);
+  background: linear-gradient(90deg, #facc15, #f59e0b);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* // 011824 Logo */
