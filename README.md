@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ YZNO Portfolio
 
-## Getting Started
+<p align="center">
+  <img src="./public/yzno_logo.png" alt="Project Logo" width="120" />
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="#introduction">Introduction</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#features">Features</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#screenshots">Screenshots</a>
+</p>
+
+---
+
+## 📌 Introduction
+
+This project is a personal portfolio website built with **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**, focusing on **responsive design**, modern UI, and clean code.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** TypeScript / React / Next.js
+- **Styling:** Tailwind CSS / Shadcn
+
+---
+
+## 🔋 Features
+
+- **Modern UI/UX** – Clean, responsive design with Tailwind CSS
+- **Reusable Components** – Scalable component-based architecture
+- **Mobile Responsive** – Works seamlessly across devices
+- **Theme Support** – Includes light and dark themes with a smooth toggle.
+
+---
+
+## ✨ Quick Start
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm
+- Git
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yarzarnayoo27/yzno-portfolio-frontend.git
+cd project-name
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🖼️ Screenshots
 
-## Learn More
+<p align="center">
+  <img src="./public/readme_light.png" alt="Project Logo" width="90%" />
+</p>
 
-To learn more about Next.js, take a look at the following resources:
+<p align="center">
+  <img src="./public/readme_dark.png" alt="Project Logo" width="90%" />
+</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📬 Contact
 
-## Deploy on Vercel
+**Yar Zar Nay Oo**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Mail: [yarzarnayoo27@gmail.com](mailto:yarzarnayoo27@gmail.com)
+- GitHub: [https://github.com/yarzarnayoo27](https://github.com/yarzarnayoo27)
+- LinkedIn: [https://www.linkedin.com/in/yarzarnayoo/](https://www.linkedin.com/in/yarzarnayoo/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Deployment
+
+- URL: [https://z292242-kp349w.ps09.zwhhosting.com/](https://z292242-kp349w.ps09.zwhhosting.com/)
+- URL: [http://yarzarnayoo.com.z292242-kp349w.ps09.zwhhosting.com/](http://yarzarnayoo.com.z292242-kp349w.ps09.zwhhosting.com/)
+- URL: [https://yarzarnayoo.vercel.app/](https://yarzarnayoo.vercel.app/)
+
+---
